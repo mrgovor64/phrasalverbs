@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.openNewCard {
+  /* cursor: pointer; */
+  color: rgb(91, 91, 91);
+}
+
+.card_module.active .card.active .openNewCard {
+  cursor: pointer;
+  color: rgb(255, 130, 0);
+}
+
+.warp {
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.card_list {
+  position: relative;
+  margin: 0 auto;
+  max-width: 700px;
+  transition-duration: .1s;
+}
+
+.middle_card {
+  margin-top: calc(30vh - 150px);
+}
+
+.card_module {
+  position: relative;
+  margin-bottom: -200px;
+  display: flex;
+  transition-duration: .2s;
+}
+
+.card_module.passed {
+  display: none;
+}
+
+.card_module.active {}
+
+.card {
+  flex: 0 0 100%;
+  position: relative;
+  border-radius: 40px;
+  background-color: white;
+
+  width: 100%;
+  max-width: 700px;
+  min-height: 300px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 2rem;
+
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.card__header {
+
+  font-size: 2rem;
+}
+
+.card__translation {
+  border-top: 1px solid #000;
+  margin-top: .5rem;
+  font-size: 1.5rem;
+}
+
+.card__example {
+  margin-top: .5rem;
+  /* font-size: 1.5rem; */
+}
+
+.card__example_translation {
+  margin-top: .5rem;
+}
+
+.card__example_synonyms {
+  margin-top: .5rem;
+}
